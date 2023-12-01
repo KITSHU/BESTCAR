@@ -4,17 +4,42 @@
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 :root {
-  font-size: 62.5%;
+  --bg-url: url(./assets/summer-background-abstract-background-wallpaper-use-for-presentation_HDDYoJOhMg_thumb.jpg);
 }
 
 body {
-  font-size: 1.6rem;
+  background: var(--bg-url)no-repeat top center/cover;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
 }
 
-h1{
-  background-color: blue;
+#top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.329);
+}
+
+#logo-top img{
+  width: 9.0rem;
+  padding: 1.0rem;
+  cursor: pointer;
+}
+
+#lista{
+  display: flex;
+  padding: 1.0rem;
+  gap: 1.0rem;
   color: white;
+}
+
+#logo {
+  background: transparent;
+  border: none;
 }
