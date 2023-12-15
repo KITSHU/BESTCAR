@@ -6,23 +6,35 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Popcar</title>
+  <title>Bestcars</title>
   <link rel="stylesheet" href="./style.css">
+  <script defer src="./index.js"></script>
 </head>
 <body>
   <div id="geral-top">
-    <div id="top">
+    <div class="top">
       <div id="logo-top">
-      <button id="logo" onclick="window.location.reload(true)"><img src="./assets/carro.png" alt="carro"></button></div>
-      <div id="lista">
-        <h3>Sobre</h3>
-        <h3>Marcas</h3>
-        <h3>Especificação</h3>
+      <button id="logo" onclick="window.location.reload(true)"><img src="./assets/Bestcars.png" alt="carro"></button>
+    </div>
+    <button class="hamburger"></button>
+      <ul class="lista">
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Preferencias</a></li>
+        <li><a href="#">personalisado</a></li>
+        <li><a href="#">Configuração</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="geral-mid">
+    <div class="mid">
+      <div class="pesquisa">
+        <input type="text">
       </div>
     </div>
   </div>
 </body>
 
-<script src="./index.js"></script>
+
 
 </html>
