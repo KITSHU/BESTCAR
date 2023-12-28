@@ -44,15 +44,16 @@ body {
   gap: 0.7rem;
   list-style: none;
   padding-right: 1.0rem;
+  z-index: 2;
 }
 
-.lista a {
+.lista .menu {
   font-size: 18px;
   color: rgb(255, 255, 255);
   padding-block: 16px;
 }
 
-a {
+.menu {
   background-color: red;
   border-radius: 999px;
   border: 2px solid white;
@@ -89,7 +90,7 @@ a {
 @media (max-width: 1920px) {
   .hamburger{
     display: block;
-    z-index: 1;
+    z-index: 3;
   }
 
   .lista {
@@ -112,28 +113,28 @@ a {
     gap: 50px;
   }
 
-  .lista a {
+  .lista .menu {
     font-size: 24px;
     opacity: 0;
   }
 
-  .lista li:nth-child(1) a {
+  .lista li:nth-child(1) .menu {
     transition: 0.5s 0.2s;
   }
 
-  .lista li:nth-child(2) a {
+  .lista li:nth-child(2) .menu {
     transition: 0.5s 0.4s;
   }
 
-  .lista li:nth-child(3) a {
+  .lista li:nth-child(3) .menu {
     transition: 0.5s 0.6s;
   }
 
-  .lista li:nth-child(4) a {
+  .lista li:nth-child(4) .menu {
     transition: 0.5s 0.8s;
   }
 
-  .lista li:nth-child(5) a {
+  .lista li:nth-child(5) .menu {
     transition: 0.5s 1.0s;
   }
 
@@ -142,7 +143,7 @@ a {
     pointer-events: all;
   }
 
-  .top.active .lista a {
+  .top.active .lista .menu {
     opacity: 1;
   }
 
@@ -169,6 +170,17 @@ a {
 
 .mid {
   padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.fundo {
+  background-color: rgba(255, 0, 0, 0.596);
+  padding: 10px;
+  border-radius: 15px;
+  flex-wrap: wrap;
 }
 
 .mid .pesquisa{
@@ -178,10 +190,11 @@ a {
 }
 
 .barra {
-  border: 4px solid rgb(0, 0, 0);
   border-radius: 999px;
   padding: 10px;
   background: black;
+  height: 62px;
+  flex-wrap: wrap;
 }
 
 .fa-solid{
@@ -190,10 +203,10 @@ a {
   cursor: pointer;
 }
 
-.mid input{
+#local {
   border: none;
   height: 40px;
-  width: 400px;
+  width: 440px;
   font-size: 20px;
   font-weight: 700;
   padding: 10px;
@@ -206,4 +219,168 @@ a {
   width: 40px;
   border: none;
   background: none;
+}
+
+.barradehorarios{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.barrahorario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 10px;
+  background: black;
+  height: 85px;
+  flex-wrap: wrap;
+}
+
+#horario {
+  border: none;
+  height: 40px;
+  width: 200px;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 10px;
+  outline: none;
+  border-radius: 999px;
+}
+
+.mid .botao-de-horario {
+  height: 40px;
+  width: 35px;
+  border: none;
+  background: none;
+}
+
+.textfieldini {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: auto;
+  width: auto;
+}
+
+.textfieldter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border-left: 2px solid rgb(255, 0, 0);
+  padding-left: 10px;
+  height: auto;
+  width: auto;
+}
+
+label {
+  color: white;
+}
+
+.aba-marcas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.barra-das-marca {
+  width: 440px;
+  height: 40px;
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px;
+  outline: none;
+  border-radius: 999px;
+}
+
+.car {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  z-index: 1;
+}
+
+.cars {
+  position: relative;
+  width: 400px;
+  height: 350px;
+  margin: 20px;
+}
+
+.cars .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.cars .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+}
+
+.cars .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cars .front h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: white;
+  background-color: rgb(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.cars .back {
+  transform: perspective(600px) rotateY(180deg);
+  background: rgb(3, 35, 54);
+  padding: 15px;
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+}
+
+.cars .back .link {
+  border-top: solid 1px #f3f3f3;
+  height: 50px;
+  line-height: 50px;
+}
+
+.cars .back .link .linksdetalhes {
+  color: #f3f3f3;
+}
+
+.cars .back .carronumeroum{
+  font-size: 30px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+.cars .back p {
+  letter-spacing: 1px;
+}
+
+.cars:hover .front {
+  transform: perspective(600px) rotatey(180deg);
+}
+
+.cars:hover .back {
+  transform: perspective(600px) rotatey(360deg);
 }
