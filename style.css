@@ -410,3 +410,46 @@ label {
 .tex2{
   margin-top: 20px;
 }
+
+@media screen and  (max-width: 320px) {
+  .fundo{
+    width: 320px;
+  }
+}
+
+@media screen and  (max-width: 320px) {
+  #local{
+    width: 236px;
+  }
+}
+
+@media screen and  (max-width: 320px) {
+  .barra-das-marca{
+    width: 236px;
+  }
+}
+
+@media screen and  (max-width: 320px) {
+  .barra{
+    width: 320px;
+  }
+}
+
+@media screen and  (max-width: 320px) {
+  .barrahorario{
+    height: 200px;
+  }
+}
+
+@media screen and  (max-width: 320px) {
+  .textfieldter {
+    border-left: none;
+    align-items: center;
+  }
+}
+
+@media screen and  (max-width: 320px) {
+  .textfieldini {
+    align-items: center;
+  }
+}
