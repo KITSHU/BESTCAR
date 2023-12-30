@@ -164,6 +164,49 @@ body {
   }
 }
 
+@media screen and  (max-width: 320px) {
+  .fundo{
+    width: 320px;
+  }
+}
+
+@media screen and  (max-width: 320px) {
+  #local{
+    width: 236px;
+  }
+}
+
+@media screen and  (max-width: 320px) {
+  .barra-das-marca{
+    width: 236px;
+  }
+}
+
+@media screen and  (max-width: 320px) {
+  .barra{
+    width: 320px;
+  }
+}
+
+@media screen and  (max-width: 320px) {
+  .barrahorario{
+    height: 200px;
+  }
+}
+
+@media screen and  (max-width: 320px) {
+  .textfieldter {
+    border-left: none;
+    align-items: center;
+  }
+}
+
+@media screen and  (max-width: 320px) {
+  .textfieldini {
+    align-items: center;
+  }
+}
+
 #geral-mid {
   background: rgba(0, 0, 0, 0.644);
 }
@@ -411,45 +454,35 @@ label {
   margin-top: 20px;
 }
 
-@media screen and  (max-width: 320px) {
-  .fundo{
-    width: 320px;
-  }
+.infos {
+  border-top: 2px solid red;
+  background-color: #000;
 }
 
-@media screen and  (max-width: 320px) {
-  #local{
-    width: 236px;
-  }
+.infoempresa {
+  margin: 30px;
+  align-items: center;
+  width: 150px;
+  color: #f3f3f3;
 }
 
-@media screen and  (max-width: 320px) {
-  .barra-das-marca{
-    width: 236px;
-  }
+.infus {
+  padding: 10px;
 }
 
-@media screen and  (max-width: 320px) {
-  .barra{
-    width: 320px;
-  }
+.infoempresas {
+  color: #f3f3f3;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-@media screen and  (max-width: 320px) {
-  .barrahorario{
-    height: 200px;
-  }
+.titus{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 500px;
 }
 
-@media screen and  (max-width: 320px) {
-  .textfieldter {
-    border-left: none;
-    align-items: center;
-  }
-}
-
-@media screen and  (max-width: 320px) {
-  .textfieldini {
-    align-items: center;
-  }
+.infus li {
+  padding: 10px;
 }
