@@ -527,3 +527,52 @@ label {
   width: 700px;
   position: relative;
 }
+
+.rede {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000000;
+  border-top: 2px solid red;
+  height: 80px;
+}
+
+.instagran {
+  color: rgb(255, 255, 255);
+  background-color: #ffffff4b;
+  font-size: 30px;
+  border-radius: 5px;
+  height: 40px;
+  width: 40px;
+  padding: 2px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.facebook {
+  color: rgb(255, 255, 255);
+  background-color: #ffffff4b;
+  font-size: 30px;
+  border-radius: 5px;
+  height: 40px;
+  width: 40px;
+  padding: 2px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.twiter {
+  color: rgb(255, 255, 255);
+  background-color: #ffffff4b;
+  font-size: 30px;
+  border-radius: 5px;
+  height: 40px;
+  width: 40px;
+  padding: 2px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.espa {
+  padding: 10px;
+}
